@@ -125,7 +125,8 @@ line
 
 # install gpg keys for couchdb
 puts 'import gpg keys for couchdb'
-if system("curl https://apache.org/dist/couchdb/KEYS | gpg --import - > /dev/null")
+#if system("curl https://apache.org/dist/couchdb/KEYS | gpg --import - > /dev/null")
+if system("curl https://downloads.apache.org/couchdb/KEYS | gpg --import - > /dev/null")
     puts "pgp keys for couchdb imported" 
 else
     puts "pgp keys for couchdb not imported" 
