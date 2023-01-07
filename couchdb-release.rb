@@ -71,7 +71,7 @@ line
 
 # delete old tmp folders
 tmp_couchdb_dir = Pathname.new("/tmp/couchdb")
-if Dir.exists?(tmp_couchdb_dir)
+if Dir.exist?(tmp_couchdb_dir)
     FileUtils.rm_rf(tmp_couchdb_dir)
     puts "old directory #{tmp_couchdb_dir} deleted"
 end
@@ -231,7 +231,7 @@ puts "Changed into #{Dir.pwd}"
 
 # run configure
 puts "run configure"
-configure_result = system("./configure -c")
+configure_result = system("./configure")
 unless configure_result
     puts 'configure did not succeed'
     exit(0)
