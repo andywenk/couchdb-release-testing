@@ -1,11 +1,11 @@
 # couchdb-release-testing
 Very simple script to conveniently do all the release testing steps for a CouchDB release candidate
 
-## prerequisites
+## Prerequisites
 
 You need to have installed Ruby 3.2. If you are on MacOS I suggest you use [rbenv](https://github.com/rbenv/rbenv).
 
-## run it
+## Run it
 
     ~ ./couchdb-release.rb
 
